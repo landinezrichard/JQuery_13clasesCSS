@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Clases de CSS</title>
+		
+		<!--Hojas de estilo -->
+		<style type="text/css">
+			.test
+			{
+				background-color:red;
+			}
+		</style>
+		
+		<!--Scripts Aca -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js">		
+		</script>
+		<script type="text/javascript">
+			$(document).on("ready",function(){
+				$(document).on("click",function(){
+					//$("#test").addClass("test");
+					//$("#test").removeClass("test");
+					$("#test").toggleClass("test");
+					if($("#test").hasClass("test")){
+						$("#test").text("Hola ahora es rojo");
+					}
+					else{
+						$("#test").text("Ahora es normal");
+					}
+				});
+			});
+		
+		</script>
+		
+	</head>
+	<body>
+		<div id="test" class="test">Haz clic aquí</div>		
+	</body>
+</html>
